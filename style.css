@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Arvo:wght@700&family=Dancing+Script&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Dancing+Script&family=Lobster&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    color: #bfbccc;
+    font-family: 'Alkalami', serif;
+    font-family: 'DM Sans', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+     background-image:url(pictures/background\ stroke.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.top{
+    border-top:1px solid rgba(27, 27, 27, 0.065) ;
+    margin-top: 200px;
+}
+.lg-display-none{
+    display: none;
+}
+.nav{
+    padding: 20px 0;
+}
+.box{
+    width: 85%;
+    margin: 0 auto;
+}
+.box-container{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#red{
+    color: #fb1506;
+}
+.logo{
+    width: 15%;
+}
+.mural{
+    width: 140px;
+}
+.menu{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.empty-line{
+    height: 5px;
+    width: 70px;
+    background-color: #fb1506;
+}
+.shop, .shop2{
+    color: white;
+    font-size: 20px;
+   
+}
+.shop-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-color: #fb1506;
+    padding: 18px 50px;
+    border-radius: 20px;
+}
+.cart-icon{
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.header-text{
+    width: 45%;
+}
+.header-sub-head{
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+}
+.header-head{
+    -webkit-text-stroke: 3px rgb(85, 85, 85);;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+.header-para{
+    margin-top: 10px;
+}
+.header-imd{
+    width: 45%;
+}
+.painted-img1{
+    width: 100%;
+    height: 500px;
+}
+.img1{
+    width: 60%;
+    height: 500px;
+}
+.img2{
+    width:38%;
+    height: 480px;
+}
+.painted-img2{
+    height: 500px;
+    width: 100%;
+}
+.painted-img3{
+    width: 100%;
+    height: 50%;
+}
+.shop-botton{
+    margin-top: 50px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fb1506;
+    padding: 20px 50px;
+}
+.call-number{
+    width: 50%;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(85, 85, 85);
+}
+.line{
+    position: relative;
+    width: 100%;
+    margin-top: -40px;
+}
+.little-art{
+    width: 100%;
+}
+.tra{
+    width: 32%;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+}
+.rectangle{
+    width: 100%;
+    right: 0;
+   
+}
+.header-img-container{
+    width: 100%;
+}
+
+/* Responsiveness */
+@media screen and (max-width:1100px){
+    .menu, .shop, .shop2, .call-number{
+        font-size: 17px;
+    }
+    .header-sub-head{
+        font-size: 35px;
+    }
+    .header-head{
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width:950px){
+    body{
+        font-size: 15px;
+    }
+    .menu, .shop, .call-number{
+       display: none;
+    }
+    .md-display-block{
+        display: block;
+    }
+    .header-sub-head{
+        font-size: 30px;
+    }
+    .header-head{
+        font-size: 45px;
+    }
+
+}
+@media screen and (max-width:650px){
+    .nav{
+        background-color:white;
+    }
+    .box{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .mid-row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mid-header-text, .mid-header-imd, .md-painted-img1{
+        width: 100%;
+    }
+    .mid-header-text{
+        position: absolute;
+        top: 100%;
+        z-index: 100;
+        text-align: center;
+
+    }
+    .mid-header-imd{
+        position: absolute;
+        top: 65%;
+    }
+    .painted-img1{
+        opacity: 0.09;
+        
+    }
+    .mid-pertr{
+        margin-left: 35%;
+    }
+    .line{
+        display: none;
+    }
+    .rel{
+        position: relative;
+        margin-bottom: 500px;
+    }
+}
